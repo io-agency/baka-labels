@@ -1,0 +1,157 @@
+<div
+  class="label"
+  style="
+    display: grid;
+    grid-template-rows: 1fr 1fr 0.25fr;
+    height: 100%;
+    font-family: helvetica, arial, sans-serif;
+  "
+>
+  <!-- Top row -->
+  <section style="display: grid; grid-template-columns: 162px 1fr; gap: 10px">
+    <!-- Logo -->
+    <div style="padding: 5px; display: grid; align-items: center">
+      <!-- src="%LOGO%" -->
+      <img
+        style="width: 100%; height: 47px; object-fit: contain"
+        src="https://glassi.bakaglass.nl/uploads/company/logos/641d628774873.png"
+      />
+    </div>
+    <!-- Top row content -->
+    <div style="border: 1px solid #f50da1; border-radius: 5px; padding: 5px">
+      <span style="font-family: helvetica, arial, sans-serif">
+        <span style="display: flex; flex-direction: column; gap: 3px">
+          <span
+            style="
+              display: flex;
+              flex-direction: row;
+              justify-content: space-between;
+              gap: 3px;
+            "
+          >
+            <span style="font-size: 16px">%ORDER_NUMBER%</span>
+            <span style="font-size: 16px">%AT%</span>
+          </span>
+          <span
+            style="font-size: 10px; font-family: helvetica, arial, sans-serif"
+          >
+            Order %ORDER_TYPE% op %DEL_DATE%
+          </span>
+          <span style="font-size: 10px">Pos. %P% (%A%)</span>
+          <!-- Delivery adress --></span
+        ></span
+      >
+      <div
+        style="
+          margin-top: 5px;
+          display: flex;
+          flex-direction: row;
+          gap: 5px;
+          align-items: center;
+        "
+      >
+        <!-- <img alt="location-marker" src=""/> -->
+        <!-- TODO: Location marker icon here -->
+        <img
+          style="width: 16px; height: 16px; object-fit: contain"
+          src="blob:https://glassi.bakaglass.nl/39b295ea-8c37-4a96-af01-2705088a5d1a"
+        />
+        <br />
+        <span style="font-size: 10px">%DELIVERY_ADRESS%</span>
+      </div>
+      <span style="font-family: helvetica, arial, sans-serif">
+        <!-- <span style="font-size: 10px">Order ontvangen op %REC_DATE%</span> -->
+      </span>
+    </div>
+  </section>
+  <!-- Second row -->
+  <section
+    style="
+      margin-top: 10px;
+      display: grid;
+      grid-template-columns: 1fr 0.5fr;
+      gap: 10px;
+      width: 100%;
+    "
+  >
+    <div style="border: 1px solid #f50da1; border-radius: 5px; padding: 5px">
+      <strong>%CUSTOMER_NAME%</strong><br />
+      %REFERENCE%<br />%REMARK%<br />%LOCATION%
+    </div>
+    <div style="border: 1px solid #f50da1; border-radius: 5px; padding: 5px">
+      %DIMENSIONS%
+    </div>
+
+    <!-- Third row -->
+    <div style="border: 1px solid #f50da1; border-radius: 5px; padding: 5px">
+      <strong><span style="font-size: 12px">%PRODUCT%</span></strong>
+      <br /><br />
+      <span>%GLASS_COMPOSITION%</span>
+    </div>
+
+    <div style="display: flex; flex-direction: row; gap: 10px">
+      <div
+        style="
+          border: 1px solid #f50da1;
+          border-radius: 5px;
+          padding: 5px;
+          display: flex;
+          flex-direction: column;
+          gap: 5px;
+          align-items: center;
+          justify-content: center;
+          width: 100%;
+        "
+      >
+        <div
+          style="
+            display: grid;
+            grid-template-columns: auto auto;
+            align-items: center;
+            justify-content: center;
+            gap: 10px;
+            aspect-ratio: 1/1;
+          "
+        >
+          <!-- Icons here -->
+          <img
+            style="width: 24px; height: 24px; object-fit: contain"
+            src="blob:https://glassi.bakaglass.nl/4da9f7db-90e6-481c-a7d2-7a33ada326b4"
+          />
+          <img
+            style="width: 24px; height: 24px; object-fit: contain"
+            src="blob:https://glassi.bakaglass.nl/e3ad4167-4bd0-4090-a08d-7896cef742c5"
+          />
+        </div>
+        Deze zijde
+      </div>
+      <div
+        style="
+          border: 1px solid #f50da1;
+          border-radius: 5px;
+          padding: 5px;
+          width: 100%;
+        "
+      >
+        <!-- QR code here -->
+        Prof scan
+      </div>
+    </div>
+  </section>
+  <!-- Bottom row -->
+  <section
+    style="
+      margin-top: 10px;
+      display: grid;
+      grid-template-columns: auto auto;
+      justify-content: space-between;
+      align-items: center;
+      gap: 20px;
+      border: 1px solid #f50da1;
+      border-radius: 5px;
+      padding: 5px;
+    "
+  >
+    EN 1279-5<br />www.ce.glass %BARCODE%,150px,25px
+  </section>
+</div>
