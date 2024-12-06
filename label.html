@@ -2,8 +2,8 @@
   class="label"
   style="
     display: grid;
-    color: #2E2A66;
-    grid-template-rows: 90px 1fr 0.25fr;
+    color: #2e2a66;
+    grid-template-rows: 85px 1fr 0.25fr;
     height: 100%;
     font-family: helvetica, arial, sans-serif;
   "
@@ -19,7 +19,7 @@
       />
     </div>
     <!-- Top row content -->
-    <div style="border: 1px solid #f50da1; border-radius: 5px; padding: 5px">
+    <div style="border: 1px solid #2e2a66; border-radius: 5px; padding: 5px">
       <span style="font-family: helvetica, arial, sans-serif">
         <span style="display: flex; flex-direction: column; gap: 3px">
           <span
@@ -75,25 +75,27 @@
       width: 100%;
     "
   >
-    <div style="border: 1px solid #f50da1; border-radius: 5px; padding: 5px">
+    <div style="border: 1px solid #2e2a66; border-radius: 5px; padding: 5px">
       <strong style="font-size: 16px">%CUSTOMER_NAME%</strong><br />
       %REFERENCE%<br />%REMARK%<br />%LOCATION%
     </div>
-    <div style="border: 1px solid #f50da1; border-radius: 5px; padding: 5px">
+    <div style="border: 1px solid #2e2a66; border-radius: 5px; padding: 5px">
       <strong>%DIMENSIONS%</strong>
     </div>
 
     <!-- Third row -->
-    <div style="border: 1px solid #f50da1; border-radius: 5px; padding: 5px">
+    <div style="border: 1px solid #2e2a66; border-radius: 5px; padding: 5px">
       <strong><span style="font-size: 16px">%PRODUCT%</span></strong>
       <br />
-      <span style="margin-left:20px">%GLASS_COMPOSITION%</span>
+      <div style="margin-left: 10px">
+        <span>%GLASS_COMPOSITION%</span>
+      </div>
     </div>
 
     <div style="display: flex; flex-direction: row; gap: 10px">
       <div
         style="
-          border: 1px solid #f50da1;
+          border: 1px solid #2e2a66;
           border-radius: 5px;
           padding: 5px;
           display: flex;
@@ -107,7 +109,7 @@
         <div
           style="
             display: grid;
-            grid-template-columns: auto auto;
+            grid-template-columns: auto 1px auto;
             align-items: center;
             justify-content: center;
             gap: 10px;
@@ -115,27 +117,47 @@
           "
         >
           <!-- Icons here -->
-          <img
-            style="width: 24px; height: 24px; object-fit: contain"
-            src="https://github.com/io-agency/baka-labels/raw/refs/heads/main/assets/sun.svg"
-          />
-          <img
-            style="width: 24px; height: 24px; object-fit: contain"
-            src="https://github.com/io-agency/baka-labels/raw/refs/heads/main/assets/couch.svg"
-          />
+          <div
+            style="
+              display: flex;
+              flex-direction: column;
+              align-items: center;
+              gap: 5px;
+            "
+          >
+            <img
+              style="width: 24px; height: 24px; object-fit: contain"
+              src="https://github.com/io-agency/baka-labels/raw/refs/heads/main/assets/sun.svg"
+            />
+            <span>Binnen</span>
+          </div>
+          <div style="width: 1px; border-right: 1px solid #2e2a66; margin-left: -1px; height: 75%"></div>
+          <div
+            style="
+              display: flex;
+              flex-direction: column;
+              align-items: center;
+              gap: 5px;
+            "
+          >
+            <img
+              style="width: 24px; height: 24px; object-fit: contain"
+              src="https://github.com/io-agency/baka-labels/raw/refs/heads/main/assets/couch.svg"
+            />
+            <span>Buiten</span>
+          </div>
         </div>
-        Deze zijde
       </div>
       <div
         style="
-          border: 1px solid #f50da1;
+          border: 1px solid #2e2a66;
           border-radius: 5px;
           padding: 5px;
           width: 100%;
         "
       >
         <!-- QR code here -->
-        Prof scan
+        <span>Prof scan:</span>
       </div>
     </div>
   </section>
@@ -148,18 +170,22 @@
       justify-content: space-between;
       align-items: center;
       gap: 20px;
-      border: 1px solid #f50da1;
+      border: 1px solid #2e2a66;
       border-radius: 5px;
       padding: 5px;
     "
   >
-    <div style="display: flex; flex-direction: row; gap: 10px; align-items: center;">
+    <div
+      style="display: flex; flex-direction: row; gap: 10px; align-items: center"
+    >
       <img
         style="margin-left: 5px; width: 24px; height: 24px; object-fit: contain"
         src="https://github.com/io-agency/baka-labels/raw/refs/heads/main/assets/ce.svg"
       />
-      EN 1279-5<br/>
-      www.ce.glass 
+      <div style="display: flex; flex-direction: column">
+        <span>EN 1279-5</span>
+        <strong>www.ce.glass</strong>
+      </div>
     </div>
     %BARCODE%,150px,25px
   </section>
