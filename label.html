@@ -2,7 +2,8 @@
   class="label"
   style="
     display: grid;
-    grid-template-rows: 1fr 1fr 0.25fr;
+    color: #2E2A66;
+    grid-template-rows: 90px 1fr 0.25fr;
     height: 100%;
     font-family: helvetica, arial, sans-serif;
   "
@@ -54,10 +55,10 @@
         <!-- TODO: Location marker icon here -->
         <img
           style="width: 16px; height: 16px; object-fit: contain"
-          src="blob:https://glassi.bakaglass.nl/39b295ea-8c37-4a96-af01-2705088a5d1a"
+          src="https://github.com/io-agency/baka-labels/raw/refs/heads/main/assets/location.svg"
         />
         <br />
-        <span style="font-size: 10px">%DELIVERY_ADRESS%</span>
+        <span style="font-size: 8px">%DELIVERY_ADDRESS%</span>
       </div>
       <span style="font-family: helvetica, arial, sans-serif">
         <!-- <span style="font-size: 10px">Order ontvangen op %REC_DATE%</span> -->
@@ -79,13 +80,13 @@
       %REFERENCE%<br />%REMARK%<br />%LOCATION%
     </div>
     <div style="border: 1px solid #f50da1; border-radius: 5px; padding: 5px">
-      %DIMENSIONS%
+      <strong>%DIMENSIONS%</strong>
     </div>
 
     <!-- Third row -->
     <div style="border: 1px solid #f50da1; border-radius: 5px; padding: 5px">
       <strong><span style="font-size: 12px">%PRODUCT%</span></strong>
-      <br /><br />
+      <br />
       <span>%GLASS_COMPOSITION%</span>
     </div>
 
@@ -116,11 +117,11 @@
           <!-- Icons here -->
           <img
             style="width: 24px; height: 24px; object-fit: contain"
-            src="blob:https://glassi.bakaglass.nl/4da9f7db-90e6-481c-a7d2-7a33ada326b4"
+            src="https://github.com/io-agency/baka-labels/raw/refs/heads/main/assets/sun.svg"
           />
           <img
             style="width: 24px; height: 24px; object-fit: contain"
-            src="blob:https://glassi.bakaglass.nl/e3ad4167-4bd0-4090-a08d-7896cef742c5"
+            src="https://github.com/io-agency/baka-labels/raw/refs/heads/main/assets/couch.svg"
           />
         </div>
         Deze zijde
@@ -152,6 +153,14 @@
       padding: 5px;
     "
   >
-    EN 1279-5<br />www.ce.glass %BARCODE%,150px,25px
+    <div style="display: flex; flex-direction: row; gap: 10px; align-items: center;">
+      <img
+        style="margin-left: 5px; width: 24px; height: 24px; object-fit: contain"
+        src="https://github.com/io-agency/baka-labels/raw/refs/heads/main/assets/ce.svg"
+      />
+      EN 1279-5<br/>
+      www.ce.glass 
+    </div>
+    %BARCODE%,150px,25px
   </section>
 </div>
