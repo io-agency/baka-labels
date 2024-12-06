@@ -80,7 +80,7 @@
       %REFERENCE%<br />%REMARK%<br />%LOCATION%
     </div>
     <div style="border: 1px solid #2e2a66; border-radius: 5px; padding: 5px">
-      <strong>%DIMENSIONS%</strong>
+      <strong style="font-size: 16px;">%DIMENSIONS%</strong>
     </div>
 
     <!-- Third row -->
@@ -102,10 +102,11 @@
           flex-direction: column;
           gap: 5px;
           align-items: center;
-          justify-content: center;
+          /* justify-content: center; */
           width: 100%;
         "
       >
+      <span style="align-self: start">Deze zijde:</span>
         <div
           style="
             display: grid;
@@ -113,7 +114,8 @@
             align-items: center;
             justify-content: center;
             gap: 10px;
-            aspect-ratio: 1/1;
+            height: 100%;
+            /* aspect-ratio: 1/1; */
           "
         >
           <!-- Icons here -->
@@ -129,9 +131,9 @@
               style="width: 24px; height: 24px; object-fit: contain"
               src="https://github.com/io-agency/baka-labels/raw/refs/heads/main/assets/sun.svg"
             />
-            <span>Binnen</span>
+            <span>Buiten</span>
           </div>
-          <div style="width: 1px; border-right: 1px solid #2e2a66; margin-left: -1px; height: 75%"></div>
+          <div style="width: 1px; border-right: 1px solid #2e2a66; height: 75%"></div>
           <div
             style="
               display: flex;
@@ -144,7 +146,7 @@
               style="width: 24px; height: 24px; object-fit: contain"
               src="https://github.com/io-agency/baka-labels/raw/refs/heads/main/assets/couch.svg"
             />
-            <span>Buiten</span>
+            <span>Binnen</span>
           </div>
         </div>
       </div>
